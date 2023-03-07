@@ -20,7 +20,6 @@
 // WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 mod is_critical_error;
-
 pub use frame_support;
 pub use frame_system;
 pub use is_critical_error::{
@@ -33,11 +32,11 @@ pub use sp_runtime;
 pub use sp_std;
 
 use frame_system::Config as SysConfig;
+use sp_core::crypto::UncheckedFrom;
 use pallet_contracts::chain_extension::{
     BufInBufOutState,
     Environment,
     Ext,
-    UncheckedFrom,
 };
 use sp_runtime::DispatchError;
 
